@@ -1,0 +1,27 @@
+.myplan-table-col-id {
+  width: 5%;
+}
+
+.myplan-table-col-name {
+  width: 20%;
+}
+
+.myplan-table-col-remark {
+  width: 30%;
+}
+
+.myplan-table-col-create-time {
+  width: 15%;
+}
+
+.myplan-table-col-modify-time {
+  width: 15%;
+}
+
+.myplan-table-col-operating {
+  width: 10%;
+}
+
+.myplan-table-input {
+  width: 100%;
+}

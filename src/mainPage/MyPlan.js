@@ -170,7 +170,8 @@ class MyPlan extends React.Component {
   }
 
   handlePlanModifyCancel(e) {
-    e.stopPropagation();
+    if (e !== undefined)
+      e.stopPropagation();
     this.setState({ editingPlan: { id: -1, name: "", remark: "", createTime: "", modifyTime: "" } });
   }
 

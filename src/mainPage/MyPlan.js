@@ -225,10 +225,10 @@ class MyPlan extends React.Component {
         </th>
         <th className="myPlan-table-col-operating">
           <button className="btn p-1 me-2" onClick={this.handleSaveNewPlan}>
-            <img alt="save" src="/assets/icons/check2.svg" />
+            <img alt="save" src="./assets/icons/check2.svg" />
           </button>
           <button className="btn p-1" onClick={this.handleDropNewPlan}>
-            <img alt="drop" src="/assets/icons/trash.svg" />
+            <img alt="drop" src="./assets/icons/trash.svg" />
           </button>
         </th>
       </tr>
@@ -264,10 +264,10 @@ class MyPlan extends React.Component {
         </th>
         <th className="myPlan-table-col-operating">
           <button className="btn p-1 me-2" onClick={this.handlePlanModifySave}>
-            <img alt="save" src="/assets/icons/check2.svg" />
+            <img alt="save" src="./assets/icons/check2.svg" />
           </button>
           <button className="btn p-1" onClick={this.handlePlanModifyCancel}>
-            <img alt="drop" src="/assets/icons/x.svg" />
+            <img alt="drop" src="./assets/icons/x.svg" />
           </button>
         </th>
       </tr>
@@ -292,11 +292,11 @@ class MyPlan extends React.Component {
             <td className="myplan-table-col-operating">
               <button className="btn p-1 me-2"
                 onClick={(e) => { e.stopPropagation(); this.handlePlanModify(x.id); }}>
-                <img alt="edit" src="/assets/icons/pencil-square.svg" />
+                <img alt="edit" src="./assets/icons/pencil-square.svg" />
               </button>
               <button className="btn p-1"
                 onClick={(e) => { e.stopPropagation(); this.handlePlanRemove(x.id); }}>
-                <img alt="drop" src="/assets/icons/trash.svg" />
+                <img alt="drop" src="./assets/icons/trash.svg" />
               </button>
             </td>
           </tr> ;

@@ -292,19 +292,19 @@ class ConfigDetail extends React.Component {
           {x.id === this.state.editShare.id &&
             <td>
               <button className="btn p-1" onClick={this.reqConfigShareModify}>
-                <img src="/assets/icons/check2.svg" alt="save"></img>
+                <img src="./assets/icons/check2.svg" alt="save"></img>
               </button>
             <button className="btn p-1" onClick={() => this.setState({ editShare: { id: -1, remark: "" } })}>
-                <img src="/assets/icons/x.svg" alt="cancel"></img>
+                <img src="./assets/icons/x.svg" alt="cancel"></img>
               </button>
             </td>
           }
           {x.id === this.state.editShare.id ||
             <td>
               <button className="btn p-1" onClick={() => this.setState({ editShare: { id: x.id, remark: x.remark } })}>
-                <img src="/assets/icons/pencil-square.svg" alt="edit"></img>
+                <img src="./assets/icons/pencil-square.svg" alt="edit"></img>
               </button>
-              <button className="btn p-1" onClick={() => this.reqConfigShareRevoke(x.id)}><img src="/assets/icons/trash.svg" alt="remove"></img></button>
+              <button className="btn p-1" onClick={() => this.reqConfigShareRevoke(x.id)}><img src="./assets/icons/trash.svg" alt="remove"></img></button>
             </td>}
         </tr>
       );
@@ -334,10 +334,10 @@ class ConfigDetail extends React.Component {
 
           <td>
             <button className="btn p-1" onClick={() => { this.reqConfigShareCreate(this.state.newShare.remark); this.setState({ newShare: { exist: false, remark: "" } }) }}>
-              <img src="/assets/icons/check2.svg" alt="save"></img>
+              <img src="./assets/icons/check2.svg" alt="save"></img>
             </button>
             <button className="btn p-1" onClick={() => this.setState({ newShare: { exist: false, remark: "" } })}>
-              <img src="/assets/icons/x.svg" alt="cancel"></img>
+              <img src="./assets/icons/x.svg" alt="cancel"></img>
             </button>
           </td>
         </tr>

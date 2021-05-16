@@ -86,10 +86,10 @@ class PlanDetailTokens extends React.Component {
           <td>{x.createTime}</td>
           <td>
             <button className="btn p-1" onClick={() => this.copyGenerateUrl(x.token)}>
-              <img src="/assets/icons/clipboard.svg" alt="copy generate url"></img>
+              <img src="./assets/icons/clipboard.svg" alt="copy generate url"></img>
             </button>
             <button className="btn p-1" onClick={() => this.reqPlanRevokeToken(x.token)}>
-              <img src="/assets/icons/trash.svg" alt="remove"></img>
+              <img src="./assets/icons/trash.svg" alt="remove"></img>
             </button>
           </td>
         </tr>

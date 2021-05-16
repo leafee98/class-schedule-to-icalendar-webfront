@@ -81,7 +81,7 @@ class PlanDetailConfig extends React.Component {
           <td>{x.modifyTime}</td>
           <td>
             <button className="btn p-1" onClick={() => this.reqPlanRemoveConfig(this.props.planId, x.id)} disabled={this.props.shared}>
-              <img src="/assets/icons/trash.svg" alt="remove"></img>
+              <img src="./assets/icons/trash.svg" alt="remove"></img>
             </button>
           </td>
         </tr>

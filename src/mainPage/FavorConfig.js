@@ -97,7 +97,7 @@ class FavorConfig extends React.Component {
           <td>{x.modifyTime}</td>
           <td>
             <button className="btn p-1" onClick={(e) => { e.stopPropagation(); this.reqFavorConfigRemove(id); }}>
-              <img src="/assets/icons/trash.svg" alt="remove"></img>
+              <img src="./assets/icons/trash.svg" alt="remove"></img>
             </button>
           </td>
         </tr>

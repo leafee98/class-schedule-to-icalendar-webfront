@@ -276,7 +276,7 @@ class ConfigDetail extends React.Component {
     let rows = [];
     for (let x of this.state.shares) {
       let tmp = (
-        <tr key={x.id} className="text-center">
+        <tr key={x.id} className="text-center align-middle">
           <td>{x.id}</td>
 
           {x.id === this.state.editShare.id && 
@@ -324,7 +324,7 @@ class ConfigDetail extends React.Component {
     let newShare = null;
     if (this.state.newShare.exist)
       newShare = (
-        <tr className="text-center">
+        <tr className="text-center align-middle">
           <td><input className="form-control w-100" disabled value="" /></td>
           <td>
             <textarea className="form-control w-100" rows="1" value={this.state.newShare.remark}

@@ -243,13 +243,13 @@ class MyPlan extends React.Component {
             value={this.state.editingPlan.id} />
         </th>
         <th className="myplan-table-col-name">
-          <textarea type="text" className="myplan-table-input" rows="1"
+          <textarea type="text" className="myplan-table-input form-control" rows="1"
             value={this.state.editingPlan.name}
             maxLength="64"
             onChange={(e) => this.onChange("editingPlan", "name", e.target.value)} />
         </th>
         <th className="myplan-table-col-remark">
-          <textarea type="text" className="myplan-table-input" rows="1"
+          <textarea type="text" className="myplan-table-input form-control" rows="1"
             value={this.state.editingPlan.remark}
             maxLength="300"
             onChange={(e) => this.onChange("editingPlan", "remark", e.target.value)} />

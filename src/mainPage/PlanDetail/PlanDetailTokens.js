@@ -81,7 +81,7 @@ class PlanDetailTokens extends React.Component {
     let rows = [];
     for (let x of this.state.tokens) {
       let tmp = (
-        <tr key={x.token}>
+        <tr key={x.token} className="align-middle">
           <td>{x.token}</td>
           <td>{x.createTime}</td>
           <td>
@@ -99,7 +99,7 @@ class PlanDetailTokens extends React.Component {
 
     if (rows.length === 0) {
       rows.push(
-        <tr key="-1">
+        <tr key="-1" className="align-middle">
           <td colSpan="3" className="text-center">
             No tokens now.
           </td>

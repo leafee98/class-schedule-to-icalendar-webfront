@@ -132,7 +132,7 @@ class PlanDetailSharelinks extends React.Component {
 
     if (rows.length === 0) {
       rows.push(
-        <tr className="align-middle text-center" key={-1}>
+        <tr className="align-middle text-center align-middle" key={-1}>
           <td colSpan="4">
             No content now.
           </td>
@@ -143,7 +143,7 @@ class PlanDetailSharelinks extends React.Component {
     let newShare = null;
     if (this.state.newShare.exist)
       newShare = (
-        <tr className="text-center">
+        <tr className="text-center align-middle">
           <td><input className="form-control w-100" disabled value="" /></td>
           <td>
             <textarea className="form-control w-100" rows="1" value={this.state.newShare.remark}

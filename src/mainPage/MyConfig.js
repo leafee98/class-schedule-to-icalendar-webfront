@@ -81,7 +81,7 @@ class MyConfig extends React.Component {
     if (rows.length <= 0) {
       rows.push(
         <tr key="-1" className="align-middle">
-          <td className="text-center" colSpan="6">
+          <td className="text-center" colSpan="7">
             Got no config.
           </td>
         </tr>

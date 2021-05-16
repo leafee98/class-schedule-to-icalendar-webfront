@@ -67,10 +67,14 @@ class PlanDetailTokens extends React.Component {
   copyGenerateUrl(token) {
     // this only work in HTTPS
     const url = window.location.protocol + "//" + window.location.host + overall.apiPath + "/generate-by-plan-token?token=" + token;
-    navigator.clipboard.writeText(url).then(
-      () => { PubSub.publish(overall.topics.toast, { head: "plan tokens", body: "success to copy generate url", fine: true }); },
-      (e) => { PubSub.publish(overall.topics.toast, { head: "plan tokens", body: "failed to copy generate url: " + e, fine: false }); },
-    )
+    if (navigator.clipboard !== undefined) {
+      navigator.clipboard.writeText(url).then(
+        () => { PubSub.publish(overall.topics.toast, { head: "plan tokens", body: "success to copy generate url", fine: true }); },
+        (e) => { PubSub.publish(overall.topics.toast, { head: "plan tokens", body: "failed to copy generate url: " + e, fine: false }); },
+      )
+    } else {
+        PubSub.publish(overall.topics.toast, { head: "plan tokens", body: "the copy action is only available in https environment.", fine: false });
+    }
   }
 
   render() {

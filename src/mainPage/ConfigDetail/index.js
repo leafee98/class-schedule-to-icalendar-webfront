@@ -230,7 +230,7 @@ class ConfigDetail extends React.Component {
 
           <div className="col-1"> <strong> Type: </strong> </div>
           <div className="col-2"> 
-            <select className="form-select" disabled={this.props.shared}
+            <select className="form-select" disabled={this.props.shared || !this.props.newConfig}
               value={this.state.config.type}
               onChange={(e) => this.setState((state) => { state.config.type = parseInt(e.target.value); return state })}>
               <option value={1}>Global Config</option>

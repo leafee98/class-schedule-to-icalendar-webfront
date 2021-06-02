@@ -36,9 +36,10 @@ class PlanDetailConfig extends React.Component {
         } else {
           PubSub.publish(overall.topics.toast, {head: "plan detail", body: "failed to add config: " + j.data, fine: false});
         }
+
+        this.props.onModify();
       }
     )
-    this.props.onModify();
   }
 
   reqPlanRemoveConfig(planId, configId) {
@@ -50,9 +51,10 @@ class PlanDetailConfig extends React.Component {
         } else {
           PubSub.publish(overall.topics.toast, { head: "plan detail", body: "failed to remove config: " + j.data, fine: false });
         }
+
+        this.props.onModify();
       }
     );
-    this.props.onModify();
   }
 
   btnAddConfig() {

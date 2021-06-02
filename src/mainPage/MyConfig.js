@@ -44,9 +44,10 @@ class MyConfig extends React.Component {
         } else {
           PubSub.publish(overall.topics.toast, { head: "my config", body: "failed to remove config: " + j.data, fine: false });
         }
+
+        this.reqConfigGetList();
       }
     );
-    this.reqConfigGetList();
   }
 
   render() {
